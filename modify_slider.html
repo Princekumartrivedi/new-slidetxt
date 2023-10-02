@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modify Slider</title>
+
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+	<!-- <style type="text/css">
+		.btn_dot
+		{
+			width: 100px;
+			height: 70px;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+ -->
+
+ <style type="text/css">
+ 	.box_item
+ 	{
+ 		background-color: lightgrey;
+ 		margin: 20px;
+ 		margin-top: 50px;
+ 		padding: 30px;
+ 		border-radius: 30px;
+ 		text-align: center;
+ 	}
+ 	.box_item .slide_img
+ 	{
+ 		margin: auto;
+ 		width: 100px!important;
+ 		height: 100px;
+ 		border-radius: 50%;
+ 		object-fit: cover;
+ 		margin-top: -80px;
+ 	}
+ 	#testimonial .owl-item
+ 	{
+ 		transform: scale(0.8);
+ 		transition: 1s;
+ 		opacity: 0.5;
+ 	}
+ 	#testimonial .owl-item.center
+ 	{
+ 		transform: scale(1);
+ 		opacity: 1;
+ 	}
+ 	#testimonial .owl-item.center .box_item
+ 	{
+ 		background-color: skyblue;
+ 	}
+ </style>
+
+</head>
+<body>
+
+	<!-- <div class="owl-carousel owl-theme">
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img1.jpg);'></button>"><img src="image/img1.jpg" alt=""></div>
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img2.jpg);'></button>"><img src="image/img2.jpg" alt=""></div>
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img3.jpg);'></button>"><img src="image/img3.jpg" alt=""></div>
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img4.jpg);'></button>"><img src="image/img4.jpg" alt=""></div>
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img5.jpg);'></button>"><img src="image/img5.jpg" alt=""></div>
+        <div data-dot="<button class='btn_dot' style='background-image: url(image/img6.jpg);'></button>"><img src="image/img6.jpg" alt=""></div>
+    </div> -->
+
+   <!--  <div class="owl-carousel owl-theme" id="slider1">
+        <div><img src="image/img1.jpg" alt=""></div>
+        <div><img src="image/img2.jpg" alt=""></div>
+        <div><img src="image/img3.jpg" alt=""></div>
+        <div><img src="image/img4.jpg" alt=""></div>
+        <div><img src="image/img5.jpg" alt=""></div>
+        <div><img src="image/img6.jpg" alt=""></div>
+    </div>
+
+    <div class="owl-carousel owl-theme" id="slider2">
+        <div><img src="image/img1.jpg" alt=""></div>
+        <div><img src="image/img2.jpg" alt=""></div>
+        <div><img src="image/img3.jpg" alt=""></div>
+        <div><img src="image/img4.jpg" alt=""></div>
+        <div><img src="image/img5.jpg" alt=""></div>
+        <div><img src="image/img6.jpg" alt=""></div>
+    </div> -->
+
+    <div class="owl-carousel owl-theme" id="testimonial">
+        <div class="box_item">
+        	<img src="image/img1.jpg" class="slide_img" alt="">
+        	<h1>Name 1</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+        <div class="box_item">
+        	<img src="image/img2.jpg" class="slide_img" alt="">
+        	<h1>Name 2</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+        <div class="box_item">
+        	<img src="image/img3.jpg" class="slide_img" alt="">
+        	<h1>Name 3</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+        <div class="box_item">
+        	<img src="image/img4.jpg" class="slide_img" alt="">
+        	<h1>Name 4</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+        <div class="box_item">
+        	<img src="image/img5.jpg" class="slide_img" alt="">
+        	<h1>Name 5</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+        <div class="box_item">
+        	<img src="image/img6.jpg" class="slide_img" alt="">
+        	<h1>Name 6</h1>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve</p>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.6.3.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		  // $("#slider1").owlCarousel({
+		  // 	//items: 1,
+		  // 	nav: true,
+		  // 	responsiveRefreshRate: 0,
+		  // 	animateIn: 'animate__backInDown',
+		  // 	animateOut: 'animate__backOutUp',
+		  // 	responsive:{
+		  // 		0:{
+		  // 			items:1,
+		  // 			nav: false,
+		  // 			dots: false,
+		  // 		},
+		  // 		600:{
+		  // 			items: 2,
+		  // 			margin: 15,
+		  // 		},
+		  // 		1000:{
+		  // 			items: 1,
+		  // 		}
+		  // 	}
+		  // });
+
+		  // $("#slider2").owlCarousel({
+		  // 	items: 2,
+		  // 	margin: 15,
+		  // });
+
+		 $("#testimonial").owlCarousel({
+		 	loop: true,
+		 	center: true,
+			items:3,
+			autoplay:true,
+		 	smartSpeed: 1000,
+		  });
+
+		});
+	</script>
+
+</body>
+</html>
